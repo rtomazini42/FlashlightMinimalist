@@ -1,0 +1,30 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 720
+  ClientWidth = 480
+  FormFactor.Width = 480
+  FormFactor.Height = 720
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  FullScreen = True
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = claBlack
+    Size.Width = 480.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    object Rectangle2: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Size.Width = 170.000000000000000000
+      Size.Height = 170.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      OnClick = Rectangle2Click
+    end
+  end
+end
